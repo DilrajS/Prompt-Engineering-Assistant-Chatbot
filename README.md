@@ -37,11 +37,15 @@ The Prompt Engineering Assistant Chatbot is a sophisticated tool designed to ass
 
 3. Create an .env file with your OpenAI API key:
 
+   ```sh
    OPENAI_API_KEY=your_api_key_here
 
-4. To run the Streamlit application, execute:
+   ```
 
+4. To run the Streamlit application, execute:
+   ```sh
    streamlit run app/main.py
+   ```
 
 ## How to Use
 
