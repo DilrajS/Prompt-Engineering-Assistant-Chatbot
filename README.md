@@ -1,0 +1,2 @@
+# Prompt Engineering Assistant Chatbot
+ The Prompt Engineering Assistant Chatbot is a sophisticated tool designed to assist users in crafting effective prompts for Large Language Models (LLMs) like GPT-3 and GPT-4. This project showcases familiarity with various advanced concepts in working with LLMs, including fine-tuning, prompt engineering, data synthesis, automatic evaluation, and retrieval-augmented generation. It serves as a practical example of applying these concepts to create a user-friendly application that enhances interactions with AI models.
