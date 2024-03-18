@@ -11,8 +11,7 @@ openai.api_key = OPENAI_API_KEY
 
 def analyze_prompt(prompt_text):
     """
-    Calls the OpenAI API to analyze the given prompt and return feedback.
-    Adjust as necessary for your application.
+    Calls the OpenAI API to analyze the given prompt and return feedback. Might need adjusting. 
     """
     response = openai.Completion.create(
       engine="text-davinci-003",
