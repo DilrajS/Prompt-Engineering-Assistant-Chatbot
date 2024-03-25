@@ -9,17 +9,18 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Initialize OpenAI API client
 openai.api_key = OPENAI_API_KEY
 
-def analyze_prompt(prompt_text):
+def optimize_prompt(prompt_text):
     """
-    Calls the OpenAI API to analyze the given prompt and return feedback. Might need adjusting. 
+    Calls the fine-tuned OpenAI model to analyze and return an optimized version of the given prompt. 
     """
     response = openai.Completion.create(
-      engine="text-davinci-003",
-      prompt=prompt_text,
-      temperature=0.7,
-      max_tokens=100,
-      top_p=1.0,
-      frequency_penalty=0.0,
-      presence_penalty=0.0
+        model="your_fine_tuned_model_id",  # Replace with your fine-tuned model's ID
+        prompt=prompt_text,
+        temperature=0.7,
+        max_tokens=100,
+        top_p=1.0,
+        frequency_penalty=0.0,
+        presence_penalty=0.0
     )
-    return response.choices[0].text.strip()
+    optimized_prompt = response.choices[0].text.strip()
+    return optimized_prompt

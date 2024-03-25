@@ -1,5 +1,5 @@
 import streamlit as st
-from app.utils import analyze_prompt  # Assuming utils.py is in an 'app' package
+from utils import analyze_prompt
 
 def main():
     st.title('Prompt Engineering Assistant Chatbot')
